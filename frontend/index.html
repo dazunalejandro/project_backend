@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sports Events</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <div class="container">
+            <a href="#" class="logo">Sports Events</a>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Events</a></li>
+                <li><a href="#">Teams</a></li>
+                <li><a href="#">Venues</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <section class="event-list">
+            <h2>Event List</h2>
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Date</th>
+                            <th>Time</th>
+                            <th>Sport</th>
+                            <th>Venue</th>
+                            <th>Home Team</th>
+                            <th>Visitor Team</th>
+                            <th>Description</th>
+                        </tr>
+                    </thead>
+                    <tbody id="events-table"></tbody>
+                </table>
+            </div>
+        </section>
+
+        <section class="add-event-form">
+            <h2>Add New Event</h2>
+            <form id="add-event-form">
+                <div class="form-group">
+                    <label for="event-date">Date</label>
+                    <input type="date" id="event-date" name="event_date" required>
+                </div>
+                <div class="form-group">
+                    <label for="event-time">Time</label>
+                    <input type="time" id="event-time" name="event_time" required>
+                </div>
+                <div class="form-group">
+                    <label for="sport">Sport</label>
+                    <input type="text" id="sport" name="sport" placeholder="Sport" required>
+                </div>
+                <div class="form-group">
+                    <label for="venue">Venue</label>
+                    <input type="text" id="venue" name="venue" placeholder="Venue" required>
+                </div>
+                <div class="form-group">
+                    <label for="home-team">Home Team</label>
+                    <input type="text" id="home-team" name="home_team" placeholder="Home Team" required>
+                </div>
+                <div class="form-group">
+                    <label for="visitor-team">Visitor Team</label>
+                    <input type="text" id="visitor-team" name="visitor_team" placeholder="Visitor Team" required>
+                </div>
+                <div class="form-group">
+                    <label for="description">Description</label>
+                    <textarea id="description" name="description" placeholder="Description"></textarea>
+                </div>
+                <button type="submit">Add Event</button>
+            </form>
+        </section>
+    </main>
+
+    <script src="js/app.js"></script>
+</body>
+</html>
